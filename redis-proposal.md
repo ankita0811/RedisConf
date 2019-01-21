@@ -11,9 +11,11 @@ SCP manages 1000+ Redis-as-a-Service instances across multiple IAASs.
 
 
 ### End-user configurable parameters
+eviction , save
+Persistence enabled
 ### Bi-weekly-Rolling-Updates-with-Near-Zero-Downtime
 
-
+Data consistency always with min_slave_to_write always 1
 
 
 ### Disaster-Recovery/Data-Protection-using-Backup-and-Restore
