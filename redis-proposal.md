@@ -28,7 +28,7 @@ MT-PostgreSQL-as-a-Service supports tenant level health monitoring. Monitoring a
 
 The monitoring agent collects this information and reports it to centralized monitoring server, which stores in a time-series-database. A monitoring-web-application shows metrics via various charts so that devops can identify the tenant health at any given time-date range.
 
-### Centralized-Troubleshooting-System-for-all-Redis-as-a-Service-instances
+### Centralized-Troubleshooting-System-for-all-Redis-as-a-Service-instance
 
 
 MT-PostgreSQL-as-a-Service supports tenant based logging for audit and troubleshooting purposes. Tenant database logs are pushed to a centralized system, enabling dev ops to debug any issue irrespective of instance availability.
