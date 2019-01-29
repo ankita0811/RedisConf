@@ -6,12 +6,12 @@ SCP's fully managed Redis-as-a-service consists of 3 VMs - 1 Master and 2-Slaves
    ``` 
 ### Major Features
 
-### End-user configurable policies like Eviction and save 
-Redis applications users can provide the values of policies favoring their use-case during instance-creation.
+### End-user configurable policies
+Redis applications users can provide the values of policies like eviction and save according their use-case requirement during instance-creation.
 ### Bi-weekly-Rolling-Updates-with-Near-Zero-Downtime:
 Redis sentinels backed by various custom scripts enables service to be available even during updates. 
 ### Persistence enabled cluster 
-RDB based persistence allows application to use as data store and not just cache.
+RDB based persistence allows application to use redis as data store and not just cache.
 
 ### Multiple-Plans-to-support-different-use-cases
 
