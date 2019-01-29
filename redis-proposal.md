@@ -25,6 +25,10 @@ A monitoring agent runs as job in every Redis VM to report its service health me
 All important system-logs and custom logs generated from a service-instance is pushed to a central system so that Ops can access them to trace any condition/debug any problems.
 Troubleshooter lets users debug any issue irrespective of service-instance availability.
 
+![N|Solid](https://github.com/ankita0811/RedisConf/blob/master/redis-logging.png?raw=true)
+
+
+
 
 ### Multi-channel-Alerting-System
 Alerting-module raise alerts when some undesired state is reported, like "redis-server-not-available, maxmemory-size-threshold-crossed, backup-failed" among others.
