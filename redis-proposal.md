@@ -18,10 +18,15 @@ RDB based persistence allows application to use as data store and not just cache
 ### Disaster-Recovery-using-Backup-and-Restore: 
 Redis-as-a-Service instance provides snapshot based backup and restore mechanism. Snapshots are stored on cloud storage in AWS/Azure/GCP. Backups are scheduled and service remains available during backup. Recovery process involves creation of volume from snapshot and attaching that volume to the master node.
 ### Centralized-Monitoring-System/Metrics-Collector
-A monitoring agent runs as job in every Redis VM to report its service health metrics like service-availability|CPU|memory|disk-usage, and database information like stored keys, maxmemory utilization. The monitoring agent collects this information and reports it to centralized monitoring server, which stores in a time-series-database. A monitoring-web-application shows metrics via various charts so that devops can identify the instance health at any given time-date range.
+A monitoring agent runs as job in every Redis VM to report its service health metrics like service-availability|CPU|memory|disk-usage, and database information like stored keys, maxmemory utilization. The monitoring agent collects this information and reports it to centralized monitoring server, which stores in a time-series-database. A monitoring-web-application shows metrics via various charts so that devops can identify the instance health at any given time-date range
+![N|Solid](https://github.com/ankita0811/RedisConf/blob/master/redis-dashboard.png?raw=true)
+
 ### Centralized-Troubleshooting-System-for-all-Redis-as-a-Service-instance
 All important system-logs and custom logs generated from a service-instance is pushed to a central system so that Ops can access them to trace any condition/debug any problems.
 Troubleshooter lets users debug any issue irrespective of service-instance availability.
 
+
 ### Multi-channel-Alerting-System
 Alerting-module raise alerts when some undesired state is reported, like "redis-server-not-available, maxmemory-size-threshold-crossed, backup-failed" among others.
+![N|Solid](https://github.com/ankita0811/RedisConf/blob/master/alert-redis.png?raw=true)
+
